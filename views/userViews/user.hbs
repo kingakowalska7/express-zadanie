@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>User list</h1>
+
+     {{#each users}}
+
+     <div class="card">
+     <div class="card-body">
+        <ul>
+         <li>{{name}}</li>
+         <li>{{address.street}}, {{address.suite}}, {{address.city}}, {{address.zipcode}}</li>
+         <li>{{website}}</li>
+       </ul>
+     </div>
+    </div> 
+    {{/each}} 
+</div>
